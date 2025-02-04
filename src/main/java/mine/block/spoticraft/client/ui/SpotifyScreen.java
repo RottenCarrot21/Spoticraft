@@ -63,7 +63,7 @@ public class SpotifyScreen extends SpruceScreen {
             progress = ((float) 0.5 * currentlyPlaying.getProgress_ms()) / ((float) 0.5 * currentlyPlaying.getItem().getDurationMs());
         }
 
-        boolean isPremium = false;
+        boolean isPremium = true;
 
         try {
             var profile = SpotifyHandler.SPOTIFY_API.getCurrentUsersProfile().build().execute();
